@@ -327,7 +327,7 @@ include(${PROJECT_SOURCE_DIR}/Source/Source.cmake)
 
 # --------------------------------------------------------------------
 # Package the OpenCL files
-# include(${PROJECT_SOURCE_DIR}/opencl/SourceList.cmake)
+include(${PROJECT_SOURCE_DIR}/opencl/SourceList.cmake)
 
 # --------------------------------------------------------------------
 # Package the needed resources
