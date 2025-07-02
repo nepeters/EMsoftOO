@@ -3564,7 +3564,7 @@ do ii = 1,ipar(2)
 ! apply the grain rotation
           dc = sngl( qq%quat_Lp( dble(dc) ) )
           ! write (*,*) '2 dc = ', dc
-          call qq%quat_print()
+          ! call qq%quat_print()
 ! apply the deformation if present
           if (present(Fmatrix)) then
             dc = matmul(sngl(Fmatrix), dc)
@@ -3736,7 +3736,7 @@ do ii = 1,ipar(2)
           dc = (/ rgx(ii,jj),rgy(ii,jj),rgz(ii,jj) /)
 ! apply the grain rotation
           dc = sngl( qq%quat_Lp( dble(dc) ) )
-          call qq%quat_print()
+          ! call qq%quat_print()
 ! and normalize the direction cosines (to remove any rounding errors)
           dc = dc/sqrt(sum(dc**2))
         end if 
