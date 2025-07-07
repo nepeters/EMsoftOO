@@ -1305,7 +1305,7 @@ if (present(getkeVs)) then
   end if
 end if
 
-if (isOverlap.eqv..TRUE.) dfMP = .TRUE.
+if (isOverlap.eqv..TRUE.) dfMP = .FALSE.
 if (isKossel.eqv..TRUE.) dfMP = .TRUE.
 
 if (present(getmLPNH)) then
